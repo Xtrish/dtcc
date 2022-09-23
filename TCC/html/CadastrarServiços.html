@@ -94,59 +94,64 @@
     <div class="container">
       <form class="bg-form mt-5">
         <div class="row">
+
+          <label for="" class="form-label"></label>
+
+          <div class="mb-3 col-md-3 "> </div>
+           
           <div class="mt-3 col-md-6 form-floating ">
-            <input type="text" id="nome" class="form-control" placeholder="Nome">
-            <label for="nome" class="form-label">Nome</label>
-          </div>
-          <div class="mt-3 col-md-5 form-floating">
-            <input type="phone" id="example-email" name="example-email" class="form-control" placeholder="Telefone">
-            <label for="example-email" class="form-label">Telefone</label>
+            <input type="text" id="paciente" class="form-control" placeholder="Paciente">
+            <label for="paciente" class="form-label">Paciente</label>
+          </div>   
+
+          <div class="mb-3 col-md-3 "> </div>
+          <div class="mb-3 col-md-3 "> </div>
+
+          <div class="mt-3 col-md-6 form-floating">
+            <input type="text" id="servico" name="servico" class="form-control" placeholder="Servico">
+            <label for="servico" class="form-label">Tipo de Serviço</label> 
           </div>
 
-          <div class="mb-3 col-md-6">
-            <label for="example-email" class="form-label">Email</label>
-            <input type="email" id="example-email" name="example-email" class="form-control" placeholder="Email">
-          </div>
-          <div class="mb-3 col-md-5">
-            <label for="example-date" class="form-label">Data de nascimento</label>
-            <input class="form-control" id="example-date" type="date" name="date">
+          <div class="mb-3 col-md-3 "> </div>
+          <div class="mb-3 col-md-3 "> </div>
+
+          <div class="mb-3 col-md-2 ">
+            <label for="example-date" class="form-label">Data de envio</label>
+            <input class="form-control" id="example-date" type="date" name="dataEnvio">
           </div>
 
+          <div class="mb-3 col-md-2 ">
+            <label for="example-date2" class="form-label">Data para entrega</label>
+            <input class="form-control" id="example-date2" type="date" name="dataEntrega">
+          </div> 
 
-          <div class="col-sm-5">
-            <input type="text" class="form-control" placeholder="Rua" aria-label="rua">
+          <div class="mb-3 col-md-2 ">
+            <label for="hora" class="form-label">Hora da entrega</label>
+            <input class="form-control" type="time" id="hora" name="hora" min="09:00" max="18:00" required>         
           </div>
-          <div class="col-sm-3">
-            <input type="text" class="form-control" placeholder="Bairro" aria-label="bairro">
-          </div>
-          <div class="col-sm-3 col-md-1">
-            <input type="text" class="form-control" placeholder="Nº" aria-label="numero">
-          </div>
-          <div class="col-sm-3">
-            <input type="text" class="form-control" placeholder="Complemento" aria-label="numero">
-          </div>
-          <div class="col-sm-6">
-            <input type="text" class="form-control" placeholder="Cidade" aria-label="cidade">
-          </div>
-          <div class="col-sm">
-            <input type="text" class="form-control" placeholder="Estado" aria-label="estado">
+               
+          <div>
+            <div class="mb-3 col-md-6">
+              <label for="example-textarea" class="form-label">Obs:</label>
+              <textarea class="form-control" id="example-textarea" rows="5"></textarea>
           </div>
 
+          <!-- <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+            <option selected>Dente</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select> -->
 
-        </div>
-        <div>
-          <div class="mb-3">
-            <label for="example-textarea" class="form-label">Obs:</label>
-            <textarea class="form-control" id="example-textarea" rows="5"></textarea>
-          </div>
-
-
+          
 
         </div>
 
+        </div>
 
+        
 
-        <button type="button" class="btn btn-success btn-center">Cadastrar</button>
+        <button type="button" class="btn btn-success btn-center">Registrar</button>
       </form>
 
 
