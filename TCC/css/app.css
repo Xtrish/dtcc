@@ -2,6 +2,7 @@
   --aqua-dark: #4d3269;
   --aqua-light: #fff;
   --btn-color: #4d3269;
+  --bg-default: #e2f6eb;
   --notosans: "Noto Sans", sans-serif !important;
 }
 .bd-placeholder-img {
@@ -38,7 +39,7 @@ header nav li:nth-child(3) {
 
 body {
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
   background-color: var(--aqua-dark);
   font-family: var(--notosans) !important;
 }
@@ -47,13 +48,9 @@ body {
   display: flex;
   justify-content: flex-start;
   height: 100vh;
-  background-image: linear-gradient(
-    to right,
-    #60128c ,
-    #fff
-  );
+  background-image: linear-gradient(to right, #60128c, #fff);
 }
-.logo{
+.logo {
   width: 40%;
   display: flex;
   align-items: center;
@@ -114,7 +111,6 @@ input:focus {
 }
 input[type="checkbox"] {
   margin-right: 5px;
-  
 }
 .checkbox-lbl {
   display: flex;
@@ -208,10 +204,15 @@ input[type="checkbox"] {
   margin-bottom: 2px;
   font-size: 1.5rem;
 }
-.bg-degrate{
-  background-image: linear-gradient(
-    to right,
-    #60128c ,
-    #fff
-  );
+.bg-degrate {
+  background-image: linear-gradient(to right, #60128c, #fff, #60128c);
+}
+.form-defult {
+  margin: 1rem;
+  padding: 2rem;
+  border-radius: 5px;
+  margin-bottom: 5rem;
+}
+.bg-default {
+  background-color: var(--bg-default);
 }
